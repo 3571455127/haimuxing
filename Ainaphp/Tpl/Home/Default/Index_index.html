@@ -1,0 +1,245 @@
+<div class="index">
+
+    <!-- banner  -->
+    <div id="home" class="banner">
+        <!-- pc -->
+        <div class="pc-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
+                        <!-- start -->
+                        <div class="swiper-slide">
+                            <a href="#contant">
+                                <img src="{$r.pic}" alt="{$r.title}">
+                            </a>
+                        </div>
+                        <!-- end -->
+                    </YP:list>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-btn">
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- wap -->
+        <div class="wap-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 2" key="n">
+                        <!-- start -->
+                        <div class="swiper-slide">
+                            <a href="#contant">
+                                <img src="{$r.pic}" alt="{$r.title}">
+                            </a>
+                        </div>
+                        <!-- end -->
+                    </YP:list>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- product -->
+    <div>
+        <a id="product"></a>
+        <div class="product">
+            <h3>Pr<span>o</span>duct</h3>
+            <div class="list">
+                <!-- 左图右文 -->
+                <YP:list order="listorder desc" catid="94" id="r" limit="4" field='thumb,title,cont,listorder,id'>
+                    <!-- start -->
+                    <div class="box clearfix">
+                        <div class="container">
+                            <div class="row">
+                                <div class="img col-lg-6 col-md-6 col-sm-6">
+                                    <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
+                                </div>
+                                <div class="txt col-lg-6 col-md-6 col-sm-6">
+                                    {$r.cont}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end -->
+                </YP:list>
+                <!-- 左文右图 -->
+                <!-- start -->
+                <div class="product-bg clearfix">
+                    <div class="container">
+                        <div class="row">
+                            <YP:list order="listorder desc" catid="95" id="r" limit="4"
+                                field='thumb,title,cont,listorder,id'>
+                                <div class="box">
+                                    <div class="txt col-lg-6 col-md-6 col-sm-6">
+                                        {$r.cont}
+                                    </div>
+                                    <div class="img col-lg-6 col-md-6 col-sm-6">
+                                        <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
+                                    </div>
+                                </div>
+                            </YP:list>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end -->
+                <a href="#contact" class="pro-contact">Contact Us</a>
+                <YP:list order="listorder desc" catid="110" id="r" limit="4" field='thumb,title,cont,listorder,id'>
+                    <div class="box clearfix">
+                        <div class="container">
+                            <div class="row">
+                                <div class="img col-lg-6 col-md-6 col-sm-6">
+                                    <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
+                                </div>
+                                <div class="txt col-lg-6 col-md-6 col-sm-6">
+                                    {$r.cont}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </YP:list>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cutting Ability -->
+    <div class="ability">
+        <div class="container">
+            <div class="row">
+                <?php getcatvar('page','id = 111','cont');?>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution -->
+    <div>
+        <a id="solution"></a>
+        <div class="solution">
+            <div class="container">
+                <div class="row">
+                    <?php getcatvar('page','id = 77','cont');?>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- about -->
+    <div>
+        <a id="about"></a>
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <?php getcatvar('page','id = 74','cont');?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Hymson -->
+    <div class="choose">
+        <div class="container">
+            <div class="row">
+                <?php getcatvar('page','id = 112','cont');?>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partners -->
+    <div class="partner">
+        <div class="container">
+            <div class="row">
+                <h3>Partners</h3>
+
+                <!-- pc  -->
+                <div class="pc-partner" style="position: relative; padding:50px 0 30px 0;">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <YP:list order="listorder desc" catid="113" id="r" limit="30"
+                                field='thumb,title,listorder,id'>
+                                <!-- start -->
+                                <div class="swiper-slide"><img src="{$r.thumb}" alt="{$r.title}"></div>
+                                <!-- end -->
+                            </YP:list>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+                <!-- wap -->
+                <div class="wap-partner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <YP:list order="listorder desc" catid="113" id="r" limit="30"
+                                field='thumb,title,listorder,id'>
+                                <!-- start -->
+                                <div class="swiper-slide"><img src="{$r.thumb}" alt="{$r.title}"></div>
+                                <!-- end -->
+                            </YP:list>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+    <div>
+        <a id="contact"></a>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <form class="clearfix" name="form" method="post" onsubmit="return beforeSubmit2(this);"
+                        action="index.php?g=Home&a=message">
+                        <div class="left col-lg-6 col-md-6 col-sm-6">
+                            <input type="text" placeholder="* Name" name="name">
+                            <input type="text" placeholder="* Emai" name="email">
+                            <textarea placeholder="* Message" name="message"></textarea>
+                            <input type="submit" value="Send Message" class="submit-btn">
+                        </div>
+                        <div class="right col-lg-6 col-md-6 col-sm-6">
+                            <input type="text" placeholder="Company Name" name="com">
+                            <input type="text" placeholder="Phone Number" name="phone">
+                            <input type="submit" value="Send Message" class="wap-submit-btn">
+                            <div class="footer-logo"><a href=""><img src="/Public/www/images//bootom-logo.png"
+                                        alt=""></a></div>
+                            <h5>{$name}</h5>
+                            <a class="website" href="{$wwwurl}" target="_blank">{$wwwurl}</a>
+                            <a href="mailto:{$email}" target="_blank" class="emails">
+                                <span>{$email}</span></a>
+                            <ul class="clearfix">
+                                <li class="youtube"><a href="{$youtube}" title="" target="_blank" rel="nofollow"><img
+                                            src="/Public/www/images//bottom-youtube.png" alt=""></a>
+                                </li>
+                                <li class="twitter"><a href="{$twitter}" title="" target="_blank" rel="nofollow"><img
+                                            src="/Public/www/images//bottom-twitter.png" alt=""></a>
+                                </li>
+                                <li class="facebook"><a href="{$facebook}" title="" target="_blank" rel="nofollow"><img
+                                            src="/Public/www/images//bottom-facebook.png" alt=""></a>
+                                </li>
+                                <li class="linkedin"><a href="{$ins}" title="" target="_blank" rel="nofollow"><img
+                                            src="/Public/www/images//bottom-linkedin.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

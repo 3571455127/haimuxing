@@ -1,0 +1,1 @@
+<?php	return array ( 'First' => '94', 'second' => '95', 'third' => '110', 'product' => '73', 'CuttingAbility' => '111', 'Solution' => '77', 'about' => '74', 'WhyChooseHymson' => '112', 'Partners' => '113', 'contact' => '78', 'thanks' => '103', );?>
