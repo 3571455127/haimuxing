@@ -52,7 +52,8 @@
             <h3>Pr<span>o</span>duct</h3>
             <div class="list">
                 <!-- 左图右文 -->
-                <YP:list order="listorder desc" catid="94" id="r" limit="4" field='thumb,title,cont,listorder,id'>
+                <YP:list order="listorder desc" catid="94" id="r" limit="4"
+                    field='thumb,title,cont,listorder,id,document'>
                     <!-- start -->
                     <div class="box clearfix">
                         <div class="container">
@@ -62,6 +63,21 @@
                                 </div>
                                 <div class="txt col-lg-6 col-md-6 col-sm-6">
                                     {$r.cont}
+                                    <!-- <a class="pro-more" href="{$r.document}">Download detailed parameters</a> -->
+
+
+
+
+                                    {if (time()-$_SESSION['time'])<60*60*24} <a class="pro-more" href="{$r.document}"
+                                        target="_blank">Download detailed parameters</a>
+                                        {else}
+                                        <div class="pro-more" data-toggle="modal" data-target="#myModal">
+                                            Download detailed parameters
+                                        </div>
+                                        {/if}
+
+
+                                        <a class="pro-more" href="#contact">Get Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -69,16 +85,50 @@
                     </div>
                     <!-- end -->
                 </YP:list>
+                <!-- 弹窗表单 -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Submit email address to
+                                    download detailed parameters</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <form class="clearfix" name="form" method="post" onsubmit="return beforeSubmit3(this);"
+                                    action="index.php?g=Home&a=message2">
+                                    <input type="hidden" value="1" name="isdownload">
+                                    <div class="">
+                                        <input type="text" placeholder="* Emai" name="email">
+                                        <input type="submit" value="Submit" class="submit-btn">
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <!-- 左文右图 -->
                 <!-- start -->
                 <div class="product-bg clearfix">
                     <div class="container">
                         <div class="row">
                             <YP:list order="listorder desc" catid="95" id="r" limit="4"
-                                field='thumb,title,cont,listorder,id'>
+                                field='thumb,title,cont,listorder,id,document'>
                                 <div class="box">
                                     <div class="txt col-lg-6 col-md-6 col-sm-6">
                                         {$r.cont}
+                                        {if (time()-$_SESSION['time'])<60*60*24} <a class="pro-more"
+                                            href="{$r.document}" target="_blank">Download detailed parameters</a>
+                                            {else}
+                                            <div class="pro-more" data-toggle="modal" data-target="#myModal">
+                                                Download detailed parameters
+                                            </div>
+                                            {/if}
+                                            <a class="pro-more" href="#contact">Get Quote</a>
                                     </div>
                                     <div class="img col-lg-6 col-md-6 col-sm-6">
                                         <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
@@ -91,7 +141,8 @@
                 </div>
                 <!-- end -->
                 <a href="#contact" class="pro-contact">Contact Us</a>
-                <YP:list order="listorder desc" catid="110" id="r" limit="4" field='thumb,title,cont,listorder,id'>
+                <YP:list order="listorder desc" catid="110" id="r" limit="4"
+                    field='thumb,title,cont,listorder,id,document'>
                     <div class="box clearfix">
                         <div class="container">
                             <div class="row">
@@ -100,6 +151,17 @@
                                 </div>
                                 <div class="txt col-lg-6 col-md-6 col-sm-6">
                                     {$r.cont}
+                                    {if (time()-$_SESSION['time'])<60*60*24} <a class="pro-more" href="{$r.document}"
+                                        target="_blank">Download detailed parameters</a>
+                                        {else}
+                                        <div class="pro-more" data-toggle="modal" data-target="#myModal">
+                                            Download detailed parameters
+                                        </div>
+                                        {/if}
+                                        <!--                                    <div class="pro-more" data-toggle="modal" data-target="#myModal">
+                                        Download detailed parameters
+                                    </div>-->
+                                        <a class="pro-more" href="#contact">Get Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +201,8 @@
         <div class="about">
             <div class="container">
                 <div class="row">
-                    <?php getcatvar('page','id = 74','cont');?>
+                    <!-- <?php getcatvar('page','id = 74','cont');?> -->
+
                 </div>
             </div>
         </div>
@@ -200,9 +263,20 @@
     <!-- contact -->
     <div>
         <a id="contact"></a>
-        <div class="contact">
+        <div class="contact" style="padding-top:11px;">
             <div class="container">
                 <div class="row">
+                    <h3 style="margin-bottom: 23px;    color: #fff;">Contact Us</h3>
+                    <p style="
+    padding-left: 12px;
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+">
+                        Get A Free Quote<br />
+                        Please fill in the following information, we will reply you as soon as possible
+                    </p>
                     <form class="clearfix" name="form" method="post" onsubmit="return beforeSubmit2(this);"
                         action="index.php?g=Home&a=message">
                         <div class="left col-lg-6 col-md-6 col-sm-6">
@@ -214,15 +288,18 @@
                         <div class="right col-lg-6 col-md-6 col-sm-6">
                             <input type="text" placeholder="Company Name" name="com">
                             <input type="text" placeholder="Phone Number" name="phone">
-                            <input type="submit" value="Send Message" class="wap-submit-btn">
+                            <div class="footer-submit">
+                                <input type="submit" value="Send Message" class="wap-submit-btn">
+                            </div>
                             <div class="footer-logo"><a href=""><img src="/Public/www/images//bootom-logo.png"
                                         alt=""></a></div>
                             <h5>{$name}</h5>
-                            <a class="website" href="{$wwwurl}" target="_blank">{$wwwurl}</a>
+                            <!--<a class="website" href="{$wwwurl}" target="_blank">{$wwwurl}</a>-->
+                            <a class="website" href="javascript:;">{$wwwurl}</a>
                             <a href="mailto:{$email}" target="_blank" class="emails">
                                 <span>{$email}</span></a>
                             <ul class="clearfix">
-                                <li class="youtube"><a href="{$youtube}" title="" target="_blank" rel="nofollow"><img
+                                <li class="youtubes"><a href="{$youtube}" title="" target="_blank" rel="nofollow"><img
                                             src="/Public/www/images//bottom-youtube.png" alt=""></a>
                                 </li>
                                 <li class="twitter"><a href="{$twitter}" title="" target="_blank" rel="nofollow"><img

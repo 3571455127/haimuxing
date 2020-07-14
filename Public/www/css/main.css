@@ -1,281 +1,1121 @@
 /* RESET */
 
+
+
+
+
+
+
 body,
+
+
+
+
+
+
 
 div,
 
+
+
+
+
+
+
 dl,
+
+
+
+
+
+
 
 dt,
 
+
+
+
+
+
+
 dd,
+
+
+
+
+
+
 
 ul,
 
+
+
+
+
+
+
 ol,
+
+
+
+
+
+
 
 li,
 
+
+
+
+
+
+
 h1,
+
+
+
+
+
+
 
 h2,
 
+
+
+
+
+
+
 h3,
+
+
+
+
+
+
 
 h4,
 
+
+
+
+
+
+
 h5,
+
+
+
+
+
+
 
 h6,
 
+
+
+
+
+
+
 pre,
+
+
+
+
+
+
 
 code,
 
+
+
+
+
+
+
 form,
+
+
+
+
+
+
 
 fieldset,
 
+
+
+
+
+
+
 legend,
+
+
+
+
+
+
 
 input,
 
+
+
+
+
+
+
 textarea,
+
+
+
+
+
+
 
 p,
 
+
+
+
+
+
+
 blockquote,
+
+
+
+
+
+
 
 th,
 
+
+
+
+
+
+
 td {
+
+
+
+
+
+
 
     margin: 0;
 
+
+
+
+
+
+
     padding: 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 table {
 
+
+
+
+
+
+
     border-collapse: collapse;
+
+
+
+
+
+
 
     border-spacing: 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 fieldset,
 
+
+
+
+
+
+
 img {
+
+
+
+
+
+
 
     border: 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 address,
 
+
+
+
+
+
+
 caption,
+
+
+
+
+
+
 
 cite,
 
+
+
+
+
+
+
 code,
+
+
+
+
+
+
 
 dfn,
 
+
+
+
+
+
+
 em,
+
+
+
+
+
+
 
 th,
 
+
+
+
+
+
+
 var,
+
+
+
+
+
+
 
 i {
 
+
+
+
+
+
+
     font-style: normal;
+
+
+
+
+
+
 
     font-weight: normal;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ol,
 
+
+
+
+
+
+
 ul {
+
+
+
+
+
+
 
     list-style: none;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 caption,
 
+
+
+
+
+
+
 th {
+
+
+
+
+
+
 
     text-align: left;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 h1,
 
+
+
+
+
+
+
 h2,
+
+
+
+
+
+
 
 h3,
 
+
+
+
+
+
+
 h4,
+
+
+
+
+
+
 
 h5,
 
+
+
+
+
+
+
 h6 {
+
+
+
+
+
+
 
     font-size: 100%;
 
+
+
+
+
+
+
     font-weight: normal;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 q:before,
 
+
+
+
+
+
+
 q:after {
+
+
+
+
+
+
 
     content: '';
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 a:focus {
 
+
+
+
+
+
+
     outline-style: none;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 abbr,
 
+
+
+
+
+
+
 acronym {
+
+
+
+
+
+
 
     border: 0;
 
+
+
+
+
+
+
     font-variant: normal;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 sup {
 
+
+
+
+
+
+
     vertical-align: text-top;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 sub {
 
+
+
+
+
+
+
     vertical-align: text-bottom;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 input,
 
+
+
+
+
+
+
 textarea,
+
+
+
+
+
+
 
 select {
 
+
+
+
+
+
+
     font-family: inherit;
+
+
+
+
+
+
 
     font-size: inherit;
 
+
+
+
+
+
+
     font-weight: inherit;
 
+
+
+
+
+
+
     *font-size: 100%;
+
+
+
+
+
+
 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 textarea {
+
+
+
+
+
+
 
     resize: none
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 input::-ms-clear {
+
+
+
+
+
+
 
     display: none;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 a,
 
+
+
+
+
+
+
 a:focus,
+
+
+
+
+
+
 
 a:hover {
 
+
+
+
+
+
+
     text-decoration: none;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 html {
 
+
+
+
+
+
+
     overflow-x: hidden;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 body {
 
+
+
+
+
+
+
     font: 12px/1.3 Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+
+
+
+
+
 
     overflow-x: hidden;
 
+
+
+
+
+
+
     color: #333;
+
+
+
+
+
+
 
     -webkit-font-smoothing: antialiased;
 
+
+
+
+
+
+
     position: relative;
+
+
+
+
+
+
 
     /* letter-spacing: 1px; */
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ::selection {
 
+
+
+
+
+
+
     background: #eb7350;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 :focus {
 
+
+
+
+
+
+
     outline-color: #eb7350;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -283,474 +1123,1884 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 footer .info {
 
+
+
+
+
+
+
     height: 120px;
+
+
+
+
+
+
 
     background-color: #f2f1f1
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 footer .info .box {
 
+
+
+
+
+
+
     padding-top: 15px;
+
+
+
+
+
+
 
     font-size: 14px
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 footer .info p {
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     padding: 20px 0;
+
+
+
+
+
+
 
     font-size: 16px
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 footer .info .box img {
+
+
+
+
+
+
 
     padding-right: 10px
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 footer .copy {
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     color: #666;
+
+
+
+
+
+
 
     font-size: 16px;
 
+
+
+
+
+
+
     line-height: 1.4;
+
+
+
+
+
+
 
     background-color: #2b2b2b;
 
+
+
+
+
+
+
     padding: 15px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .goTop {
 
+
+
+
+
+
+
     position: fixed;
 
-    bottom: 10rem;
+
+
+
+
+
+
+    bottom: 12rem;
+
+
+
+
+
+
 
     right: 0;
 
+
+
+
+
+
+
     display: none;
+
+
+
+
+
+
 
     width: 58px;
 
+
+
+
+
+
+
     height: 58px;
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     border-radius: 10px;
+
+
+
+
+
+
 
     font-size: 18px;
 
+
+
+
+
+
+
     background: #005cac;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
     cursor: pointer;
 
+
+
+
+
+
+
     z-index: 999;
+
+
+
+
+
+
 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .goTop .topIcon {
+
+
+
+
+
+
 
     display: inline-block;
 
+
+
+
+
+
+
     width: 18px;
+
+
+
+
+
+
 
     height: 18px;
 
+
+
+
+
+
+
     border-top: 2px solid;
+
+
+
+
+
+
 
     border-left: 2px solid #fff;
 
+
+
+
+
+
+
     transform: rotate(45deg);
+
+
+
+
+
+
 
     position: absolute;
 
+
+
+
+
+
+
     top: 15px;
+
+
+
+
+
+
 
     left: 36%
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .goTop p {
 
+
+
+
+
+
+
     font-size: 16px;
+
+
+
+
+
+
 
     padding-top: 32px
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* thank */
+
+
+
+
+
+
 
 .thank h5,
 
+
+
+
+
+
+
 .thank p {
+
+
+
+
+
+
 
     line-height: 1.4;
 
+
+
+
+
+
+
     font-size: 24px;
+
+
+
+
+
+
 
     padding-bottom: 20px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .thank .back {
 
+
+
+
+
+
+
     padding-left: 10px;
+
+
+
+
+
+
 
     width: 32px;
 
+
+
+
+
+
+
     max-width: 100%;
+
+
+
+
+
+
 
     height: auto;
 
+
+
+
+
+
+
     cursor: pointer;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* thank */
 
+
+
+
+
+
+
 /* footer */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* header */
 
+
+
+
+
+
+
 header .top-bar {
+
+
+
+
+
+
 
     height: 50px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .left {
 
+
+
+
+
+
+
     font-size: 16px;
+
+
+
+
+
+
 
     line-height: 1.4;
 
+
+
+
+
+
+
     color: #666;
+
+
+
+
+
+
 
     line-height: 50px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .eamil {
 
+
+
+
+
+
+
     text-align: right;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .emails {
 
+
+
+
+
+
+
     font-size: 18px;
+
+
+
+
+
+
 
     color: #666;
 
+
+
+
+
+
+
     line-height: 50px;
+
+
+
+
+
+
 
     background: url("../images/top-eamil.png")no-repeat;
 
+
+
+
+
+
+
     background-size: 20px;
+
+
+
+
+
+
 
     background-position: left center;
 
+
+
+
+
+
+
     padding-left: 28px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .emails:hover {
 
+
+
+
+
+
+
     color: #005cac;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .share {
 
+
+
+
+
+
+
     text-align: right;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .share li {
 
+
+
+
+
+
+
     float: left;
+
+
+
+
+
+
 
     margin: 15px 0;
 
+
+
+
+
+
+
     margin-right: 20px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .share li:nth-child(2) {
 
+
+
+
+
+
+
     margin: 20px 26px 5px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 header .top-bar .share li:nth-child(3) {
 
+
+
+
+
+
+
     margin: 18px 26px 5px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 header .top-bar .share li:nth-child(4) {
 
+
+
+
+
+
+
     margin: 18px 26px 5px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .share li:last-child {
 
+
+
+
+
+
+
     margin-right: 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .top-bar .share li a {
 
+
+
+
+
+
+
     display: block;
+
+
+
+
+
+
 
     width: 20px;
 
+
+
+
+
+
+
     height: 20px;
+
+
+
+
+
+
 
     transition: all .2s ease;
 
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
 header .top-bar .share li a img {
+
+
+
     max-width: 100%;
+
+
+
     height: auto;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 header .top-bar .share li:hover a {
 
+
+
+
+
+
+
     -webkit-transform: translateY(-4px);
+
+
+
+
+
+
 
     -moz-transform: translateY(-4px);
 
+
+
+
+
+
+
     -ms-transform: translateY(-4px);
 
+
+
+
+
+
+
     -o-transform: translateY(-4px);
+
+
+
+
+
+
 
     transform: translateY(-4px)
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 header .navbar-default {
+
+
+
+
+
+
 
     border: none;
 
+
+
+
+
+
+
     margin: 0;
+
+
+
+
+
+
 
     background-color: #fff;
 
+
+
+
+
+
+
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .navbar-default .navbar-brand {
 
+
+
+
+
+
+
     height: auto;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .navbar-default .navbar-nav>li>a {
 
+
+
+
+
+
+
     color: #555;
+
+
+
+
+
+
 
     font-size: 20px;
 
+
+
+
+
+
+
     padding: 35px 20px;
+
+
+
+
+
+
 
     text-transform: capitalize;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .navbar-default .navbar-nav>.active>a,
 
+
+
+
+
+
+
 header .navbar-default .navbar-nav>.active>a:focus,
+
+
+
+
+
+
 
 header .navbar-default .navbar-nav>.active>a:hover {
 
+
+
+
+
+
+
     background-color: #fff;
+
+
+
+
+
+
 
     color: #005cac;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .navbar-default .navbar-nav>li>a:focus,
 
+
+
+
+
+
+
 header .navbar-default .navbar-nav>li>a:hover {
+
+
+
+
+
+
 
     color: #005cac;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .navbar-fixed-top .navbar-brand>img {
 
+
+
+
+
+
+
     width: 176px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 header .navbar-fixed-top .navbar-nav>li>a {
 
+
+
+
+
+
+
     padding: 25px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .banner .pc-banner .swiper-pagination-bullet {
 
+
+
+
+
+
+
     width: 15px;
+
+
+
+
+
+
 
     height: 15px;
 
+
+
+
+
+
+
     background-color: #fff;
+
+
+
+
+
+
 
     border: 1px solid #005cac;
 
+
+
+
+
+
+
     opacity: 1;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .banner .pc-banner .swiper-pagination-bullet-active {
 
+
+
+
+
+
+
     background-color: #005cac;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .banner .pc-banner .swiper-button-next,
 
+
+
+
+
+
+
 .banner .pc-banner .swiper-button-prev {
+
+
+
+
+
+
 
     width: 40px;
 
+
+
+
+
+
+
     height: 40px;
+
+
+
+
+
+
 
     border: 1px solid #fff;
 
+
+
+
+
+
+
     z-index: 1;
+
+
+
+
+
+
 
     color: #005cac;
 
+
+
+
+
+
+
     background-color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .banner .pc-banner .swiper-button-next:hover,
 
+
+
+
+
+
+
 .banner .pc-banner .swiper-button-prev:hover {
+
+
+
+
+
+
 
     background-color: #005cac;
 
+
+
+
+
+
+
     border: 1px solid #005cac;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .banner .pc-banner .swiper-button-next:after,
 
+
+
+
+
+
+
 .banner .pc-banner .swiper-button-prev:after {
+
+
+
+
+
+
 
     font-size: 20px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .banner .pc-banner .swiper-actives {
 
+
+
+
+
+
+
     background-color: #005cac;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .wap-banner {
 
+
+
+
+
+
+
     display: none;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index img {
 
+
+
+
+
+
+
     max-width: 100%;
+
+
+
+
+
+
 
     height: auto;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -758,165 +3008,741 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index #product,
 
+
+
+
+
+
+
 .index #solution,
+
+
+
+
+
+
 
 .index #about,
 
+
+
+
+
+
+
 .index #contact {
+
+
+
+
+
+
 
     display: block;
 
+
+
+
+
+
+
     height: 70px;
+
+
+
+
+
+
 
     margin-top: -70px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* product */
 
+
+
+
+
+
+
 .index .product {
+
+
+
+
+
+
 
     padding: 50px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index h3 {
 
+
+
+
+
+
+
     font-size: 36px;
+
+
+
+
+
+
 
     font-weight: 600;
 
+
+
+
+
+
+
     color: #005cac;
+
+
+
+
+
+
 
     text-transform: capitalize;
 
+
+
+
+
+
+
     line-height: 1.4;
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     position: relative;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index h3::after {
 
+
+
+
+
+
+
     position: absolute;
+
+
+
+
+
+
 
     bottom: -10px;
 
+
+
+
+
+
+
     left: 50%;
+
+
+
+
+
+
 
     transform: translateX(-50%);
 
+
+
+
+
+
+
     content: "";
+
+
+
+
+
+
 
     width: 70px;
 
+
+
+
+
+
+
     height: 4px;
+
+
+
+
+
+
 
     background: url("../images/product-lines.png")no-repeat;
 
+
+
+
+
+
+
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index h3 span {
 
+
+
+
+
+
+
     color: #fc5425;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list {
 
+
+
+
+
+
+
     padding: 10px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .box {
 
+
+
+
+
+
+
     padding: 30px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .box .row {
 
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
 
     align-items: center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* .index .product .list .img {
 
+
+
+
+
+
+
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 
+
+
+
+
+
+
     border-radius: 0px 25px 0px 25px;
+
+
+
+
+
+
 
 } */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .index .product .list .txt {
+
+
+
+
+
+
 
     padding-left: 50px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .txt .title {
 
+
+
+
+
+
+
     font-size: 20px;
+
+
+
+
+
+
 
     color: #005cac;
 
+
+
+
+
+
+
     font-weight: 600;
+
+
+
+
+
+
 
     line-height: 1.4;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .txt ul {
 
+
+
+
+
+
+
     padding: 20px 0;
+
+
+
+
+
+
 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .index .product .list .txt li {
+
+
+
+
+
+
 
     padding: 5px 0;
 
+
+
+
+
+
+
     font-size: 16px;
+
+
+
+
+
+
 
     color: #666;
 
+
+
+
+
+
+
     background: url("../images/dot.png")no-repeat;
+
+
+
+
+
+
 
     background-position: left center;
 
+
+
+
+
+
+
     padding-left: 20px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.index .product .modal-dialog {
+
+    width: 400px;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+
+
+.index .product .modal-title {
+
+    font-size: 16px;
+
+    text-align: center;
+
+    font-weight: 600;
+
+}
+
+
+
+.index .product form {
+
+    text-align: center;
+
+}
+
+
+
+.index .product input {
+
+    width: 90%;
+
+    margin: 0 auto;
+
+    height: 40px;
+
+    line-height: 40px;
+
+    border: 1px solid #ddd;
+
+    padding-left: 15px;
+
+    border-radius: 4px;
+
+    font-size: 15px;
+
+}
+
+
+
+.index .product form .submit-btn {
+
+    width: 90%;
+
+    margin: 20px 0;
+
+    outline: none;
+
+
+
+}
+
+
+
+.index .product form .submit-btn:hover {
+
+    color: #fff;
+
+    background-color: #fc5425;
 
 }
 
@@ -924,11 +3750,9 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index .product .pro-more {
 
-    display: block;
+    cursor: pointer;
 
-    width: 250px;
-
-    height: 40px;
+    display: inline-block;
 
     line-height: 40px;
 
@@ -940,69 +3764,277 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
     border: 1px solid #005cac;
 
+    padding: 15px 10px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .pro-more:hover {
 
+
+
+
+
+
+
     background-color: #005cac;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .product-bg {
 
+
+
+
+
+
+
     background: url("../images/product-bg.png")no-repeat;
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .product-bg .title,
 
+
+
+
+
+
+
 .index .product .list .product-bg li,
 
+
+
+
+
+
+
 .index .product .list .product-bg .pro-more {
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .product-bg .pro-more {
 
+
+
+
+
+
+
     border: 1px solid #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .product-bg .box {
 
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
 
     align-items: center;
 
+
+
+
+
+
+
     padding: 30px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .list .product-bg .txt {
 
+
+
+
+
+
+
     padding-left: 15px;
+
+
+
+
+
+
 
     padding-right: 30px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1010,221 +4042,881 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index .product .pro-contact {
 
+
+
+
+
+
+
     display: block;
+
+
+
+
+
+
 
     width: 160px;
 
+
+
+
+
+
+
     height: 46px;
+
+
+
+
+
+
 
     line-height: 46px;
 
+
+
+
+
+
+
     font-size: 24px;
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     color: #005cac;
+
+
+
+
+
+
 
     border: 2px solid #005cac;
 
+
+
+
+
+
+
     border-radius: 8px;
+
+
+
+
+
+
 
     margin: 30px auto;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .product .pro-contact:hover {
 
+
+
+
+
+
+
     color: #fff;
+
+
+
+
+
+
 
     background-color: #005cac;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* Cutting Ability */
 
+
+
+
+
+
+
 .index .ability {
+
+
+
+
+
+
 
     background: url("../images/ability-bg.png")no-repeat;
 
+
+
+
+
+
+
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .ability h3 {
 
+
+
+
+
+
+
     margin: 30px 0;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .ability h3::after {
 
+
+
+
+
+
+
     background: url("../images/ability-lines.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .ability .content {
 
+
+
+
+
+
+
     padding: 15px 0 30px 0;
+
+
+
+
+
+
 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .index .ability .content .left {
+
+
+
+
+
+
 
     padding-top: 9px;
 
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
 .index .ability .content .left {
+
+
+
     overflow: hidden;
+
+
+
 }
+
+
+
+
+
+
 
 .index .ability .content .right>div {
 
+
+
+
+
+
+
     padding: 0;
+
+
+
     overflow: hidden;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 .index .ability .content .right>div img,
+
+
+
 .index .ability .content .left img {
+
+
+
     transition: all .4s ease-in-out;
+
+
+
 }
 
+
+
+
+
+
+
 .index .ability .content .right>div:hover img,
+
+
+
 .index .ability .content .left:hover img {
+
+
+
     -webkit-transform: scale(1.1);
+
+
+
     -ms-transform: scale(1.1);
+
+
+
     -o-transform: scale(1.1);
+
+
+
     transform: scale(1.1);
+
+
+
 }
+
+
+
+
+
+
 
 /* solution */
 
+
+
+
+
+
+
 .index .solution {
+
+
+
+
+
+
 
     padding-top: 50px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .solution .list .box {
 
+
+
+
+
+
+
     position: relative;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .solution .list>div {
 
+
+
+
+
+
+
     padding-bottom: 30px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .solution .list p {
 
+
+
+
+
+
+
     opacity: 0;
+
+
+
+
+
+
 
     position: absolute;
 
+
+
+
+
+
+
     top: 0;
+
+
+
+
+
+
 
     left: 0;
 
+
+
+
+
+
+
     width: 100%;
+
+
+
+
+
+
 
     height: 100%;
 
+
+
+
+
+
+
     color: #fff;
+
+
+
+
+
+
 
     font-size: 24px;
 
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
 
     justify-content: center;
 
+
+
+
+
+
+
     align-items: center;
+
+
+
+
+
+
 
     background: rgba(0, 0, 0, 0.6);
 
+
+
+
+
+
+
     border-radius: 0px 40px 0px 40px;
+
+
+
+
+
+
 
     transition: all .5s ease-in-out 0s;
 
+
+
+
+
+
+
     text-align: center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .solution .list .box:hover p {
 
+
+
+
+
+
+
     opacity: 1;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .solution .list {
 
+
+
+
+
+
+
     padding-top: 40px;
 
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
 .index .solution .row {
+
+
+
     text-align: center;
+
+
+
 }
+
+
+
+
+
+
 
 .index .solution .solution-down {
 
+
+
+
+
+
+
     font-size: 20px;
+
+
+
+
+
+
 
     margin: 0 auto;
 
+
+
+
+
+
+
     display: inline-block;
+
+
+
+
+
+
 
     width: 160px;
 
+
+
+
+
+
+
     text-align: center;
+
+
+
+
+
+
 
     padding-left: 30px;
 
+
+
+
+
+
+
     height: 44px;
+
+
+
+
+
+
 
     line-height: 44px;
 
+
+
+
+
+
+
     color: #005cac;
+
+
+
+
+
+
 
     border: 1px solid #005cac;
 
+
+
+
+
+
+
     border-radius: 6px;
+
+
+
+
+
+
 
     background: url("../images/down.png")no-repeat;
 
+
+
+
+
+
+
     background-size: 22px;
+
+
+
+
+
+
 
     background-position: 20px center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1232,114 +4924,465 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     color: #fff;
+
+
+
+
+
+
 
     background-image: url("../images/down-w.png");
 
+
+
+
+
+
+
     background-color: #005cac;
+
+
+
+
+
+
 
     background-size: 22px;
 
+
+
+
+
+
+
     background-position: 20px center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* about   */
 
+
+
+
+
+
+
 .index .about {
+
+
+
+
+
+
 
     padding: 50px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .about .box {
 
+
+
+
+
+
+
     padding: 40px 0;
+
+
+
+
+
+
 
     display: flex;
 
+
+
+
+
+
+
     align-items: center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .about .box .txt p {
 
+
+
+
+
+
+
     font-size: 16px;
+
+
+
+
+
+
 
     line-height: 1.4;
 
+
+
+
+
+
+
     color: #444;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .about .box .pull-right {
 
+
+
+
+
+
+
     padding-right: 15px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .about .box .about-down {
 
+
+
+
+
+
+
     height: 28px;
+
+
+
+
+
+
 
     float: left;
 
+
+
+
+
+
+
     margin-right: 15px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 .index .about .box .pull-right>img {
+
+
+
     height: 28px;
+
+
+
+
+
+
 
     float: left;
 
+
+
+
+
+
+
     margin-right: 15px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 .index .about .box .txt .about-contact {
 
+
+
+
+
+
+
     float: left;
+
+
+
+
+
+
 
     display: block;
 
+
+
+
+
+
+
     width: 100px;
+
+
+
+
+
+
 
     height: 32px;
 
+
+
+
+
+
+
     line-height: 32px;
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     color: #005cac;
+
+
+
+
+
+
 
     border: 1px solid #005cac;
 
+
+
+
+
+
+
     border-radius: 8px;
+
+
+
+
+
+
 
     font-size: 16px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .about .digital .circleChart {
 
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
 
     align-items: center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1347,298 +5390,1198 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index .about .digital p {
 
+
+
+
+
+
+
     line-height: 1.4 !important;
+
+
+
+
+
+
 
     color: #005cac;
 
+
+
+
+
+
+
     top: 50% !important;
+
+
+
+
+
+
 
     transform: translateY(-50%);
 
+
+
+
+
+
+
     font-weight: 600 !important;
+
+
+
+
+
+
 
     font-size: 30px !important;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .about .digital p>div {
 
+
+
+
+
+
+
     font-size: 14px;
+
+
+
+
+
+
 
     width: 65%;
 
+
+
+
+
+
+
     margin: 0 auto;
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     color: #666;
+
+
+
+
+
+
 
     font-weight: 400;
 
 
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 .index .about .box .txt .about-contact:hover {
+
+
+
     background-color: #005cac;
+
+
+
     color: #fff;
+
+
+
 }
+
+
+
+
+
+
 
 .index .about .digital .circleChart:hover p {
+
+
+
     color: #fc5425 !important;
+
+
+
 }
 
+
+
+
+
+
+
 .index .about .digital>div {
+
+
+
     transition: all .2s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .index .about .digital>div:hover {
 
+
+
+
+
+
+
     -webkit-transform: translateY(-4px);
+
+
+
+
+
+
 
     -moz-transform: translateY(-4px);
 
+
+
+
+
+
+
     -ms-transform: translateY(-4px);
 
+
+
+
+
+
+
     -o-transform: translateY(-4px);
+
+
+
+
+
+
 
     transform: translateY(-4px)
 }
 
+
+
+
+
+
+
 /* Why Choose Hymson */
+
+
+
+
+
+
 
 .index .choose {
 
+
+
+
+
+
+
     background: url("../images/choose-bg.png")no-repeat;
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
     padding: 30px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list {
 
+
+
+
+
+
+
     padding-top: 50px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div {
 
+
+
+
+
+
+
     margin-bottom: 30px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list .box-img {
 
+
+
+
+
+
+
     text-align: center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .box {
 
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
 
     align-items: center;
 
+
+
+
+
+
+
     background-color: #fff;
+
+
+
+
+
+
 
     padding: 15px 0;
 
+
+
+
+
+
+
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
+
+
+
+
+
+
 
     height: 150px;
 
+
+
+
+
+
+
     line-height: 150px;
+
+
+
+
+
+
 
     transition: all .5s ease-in-out 0s;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .box .txt {
 
+
+
+
+
+
+
     font-size: 18px;
+
+
+
+
+
+
 
     line-height: 1.4;
 
+
+
+
+
+
+
     color: #333;
+
+
+
+
+
+
 
     padding-left: 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list i {
 
+
+
+
+
+
+
     display: block;
 
-    width: 80px;
 
-    height: 76px;
+
+
+
+
+
+    width: 82px;
+
+
+
+
+
+
+
+    height: 82px;
+
+
+
+
+
+
 
     margin: 0 auto;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:nth-child(1) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico1.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:nth-child(2) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico2.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:nth-child(3) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico3.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:nth-child(4) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico4.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:hover .box {
 
+
+
+
+
+
+
     background-color: #005cac;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:hover .box .txt {
 
+
+
+
+
+
+
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:hover:nth-child(1) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico1-bg.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:hover:nth-child(2) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico2-bg.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:hover:nth-child(3) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico3-bg.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .choose .list>div:hover:nth-child(4) i {
 
+
+
+
+
+
+
     background: url("../images/choose-ico4-bg.png");
+
+
+
+
+
+
 
     background-size: cover;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* Partners */
 
+
+
+
+
+
+
 .index .partner {
+
+
+
+
+
+
 
     padding: 30px 0;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner .pc-partner .swiper-container {
 
+
+
+
+
+
+
     height: 300px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner .pc-partner .swiper-slide {
 
+
+
+
+
+
+
     height: 140px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner .wap-partner {
 
+
+
+
+
+
+
     display: none;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner img {
 
+
+
+
+
+
+
     transition: all .3s ease-in-out;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner img:hover {
 
+
+
+
+
+
+
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1648,287 +6591,1205 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index .partner .swiper-button-next,
 
+
+
+
+
+
+
 .index .partner .swiper-button-prev {
+
+
+
+
+
+
 
     width: 35px;
 
+
+
+
+
+
+
     height: 35px;
+
+
+
+
+
+
 
     border: 1px solid #005cac;
 
+
+
+
+
+
+
     outline-style: none;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
     background-color: #005cac;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner .swiper-button-prev {
 
+
+
+
+
+
+
     left: -60px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner .swiper-button-next {
 
+
+
+
+
+
+
     right: -60px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner .swiper-button-next:after,
 
+
+
+
+
+
+
 .index .partner .swiper-button-prev:after {
+
+
+
+
+
+
 
     font-size: 18px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .partner .swiper-button-next.swiper-button-disabled,
 
+
+
+
+
+
+
 .index .partner .swiper-button-prev.swiper-button-disabled {
+
+
+
+
+
+
 
     opacity: 1;
 
+
+
+
+
+
+
     color: #005cac;
+
+
+
+
+
+
 
     background-color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* contact */
 
+
+
+
+
+
+
 .index .contact {
+
+
+
+
+
+
 
     background: url("../images/contact-bg.png")no-repeat;
 
+
+
+
+
+
+
     background-size: cover;
+
+
+
+
+
+
 
     padding: 50px 0;
 
+
+
+
+
+
+
     margin-top: 30px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .contact input {
 
+
+
+
+
+
+
     width: 90%;
+
+
+
+
+
+
 
     height: 46px;
 
+
+
+
+
+
+
     line-height: 46px;
+
+
+
+
+
+
 
     padding-left: 15px;
 
+
+
+
+
+
+
     font-size: 16px;
+
+
+
+
+
+
 
     color: #333;
 
+
+
+
+
+
+
     background-color: #fff;
+
+
+
+
+
+
 
     border: none;
 
+
+
+
+
+
+
     margin-bottom: 25px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index .contact textarea {
 
+
+
+
+
+
+
     width: 90%;
+
+
+
+
+
+
 
     height: 155px;
 
+
+
+
+
+
+
     background-color: #fff;
+
+
+
+
+
+
 
     padding-left: 15px;
 
+
+
+
+
+
+
     font-size: 16px;
+
+
+
+
+
+
 
     padding-top: 8px;
 
+
+
+
+
+
+
     margin-bottom: 25px;
+
+
+
+
+
+
 
 }
 
 
 
-.index form .submit-btn,
-.index form .wap-submit-btn {
+
+
+
+
+
+
+
+
+
+
+
+
+.index form .contact .submit-btn,
+
+
+
+.index form .contact .wap-submit-btn {
+
+
+
+
+
+
 
     width: 150px;
 
+
+
+
+
+
+
     padding: 0;
+
+
+
+
+
+
 
     float: right;
 
+
+
+
+
+
+
     margin-right: 56px;
+
+
+
+
+
+
 
     text-align: center;
 
+
+
+
+
+
+
     background-color: #ec652b;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
 .index form .wap-submit-btn {
+
+
+
     display: none;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 .index form .right h5 {
 
+
+
+
+
+
+
     font-size: 20px;
+
+
+
+
+
+
 
     padding: 10px 0;
 
+
+
+
+
+
+
     line-height: 1.4;
+
+
+
+
+
+
 
     color: #fff;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index form .right .website,
 
+
+
+
+
+
+
 .index form .right .emails {
+
+
+
+
+
+
 
     display: block;
 
+
+
+
+
+
+
     font-size: 18px;
+
+
+
+
+
+
 
     line-height: 1.4;
 
+
+
+
+
+
+
     color: #fff;
+
+
+
+
+
+
 
     margin-bottom: 10px;
 
+
+
+
+
+
+
     padding-left: 35px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index form .right .website:hover,
 
+
+
+
+
+
+
 .index form .right .emails:hover {
+
+
+
+
+
+
 
     color: #ec652b;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index form .right .website {
 
+
+
+
+
+
+
     background: url("../images/website.png")no-repeat;
+
+
+
+
+
+
 
     background-position: left center;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index form .right .emails {
 
+
+
+
+
+
+
     background: url("../images/bottom-eamil.png")no-repeat;
+
+
+
+
+
+
 
     background-position: left center;
 
+
+
+
+
+
+
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .index form .right li {
+
+
+
+
+
+
 
     float: left;
 
+
+
+
+
+
+
     height: 56px;
+
+
+
+
+
+
 
     line-height: 56px;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index form .right li {
 
+
+
+
+
+
+
     transition: all .2s ease;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .index form .right li:hover {
 
+
+
+
+
+
+
     -webkit-transform: translateY(-4px);
+
+
+
+
+
+
 
     -moz-transform: translateY(-4px);
 
+
+
+
+
+
+
     -ms-transform: translateY(-4px);
 
+
+
+
+
+
+
     -o-transform: translateY(-4px);
+
+
+
+
+
+
 
     transform: translateY(-4px)
 }
 
+
+
+
+
+
+
 .index .about .digital>div {
+
+
+
     float: left;
+
+
+
     width: 25%;
+
+
+
 }
 
+
+
+
+
+
+
 /* 响应式 */
+
+
+
+
+
+
 
 @media screen and (max-width:1920px) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     .thank {
+
+
+
+
+
+
 
         padding: 290px 0;
 
+
+
+
+
+
+
         text-align: center;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .banner .swiper-button-prev,
 
+
+
+
+
+
+
     .banner .swiper-container-rtl .swiper-button-next {
+
+
+
+
+
+
 
         left: 100px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .banner .swiper-button-next,
 
+
+
+
+
+
+
     .banner .swiper-container-rtl .swiper-button-prev {
 
+
+
+
+
+
+
         right: 100px;
+
+
+
+
+
+
 
     }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+.wrapper {
+    max-width: 680px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.youtube img {
+    width: 100%;
+    top: -16.82%;
+    left: 0;
+    opacity: 0.7;
+}
+
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
 
 
 
@@ -1938,48 +7799,207 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1024px) {
+
+
+
+
+
+
 
     header .top-bar .left {
 
+
+
+
+
+
+
         font-size: 15px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     header .top-bar .emails {
 
+
+
+
+
+
+
         font-size: 15px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     header .top-bar .share li,
 
+
+
+
+
+
+
     header .top-bar .share li:nth-child(2) {
+
+
+
+
+
+
 
         margin-right: 20px;
 
+
+
+
+
+
+
     }
 
+
+
+
+
+
+
     .index .about .digital>div {
+
+
+
         float: left;
+
+
+
         width: 50%;
+
+
+
     }
+
+
+
+
+
+
+
+
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 @media all and (max-width: 980px) {
+
+
+
     .index .about .digital>div {
+
+
+
         float: left;
+
+
+
         width: 50%;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1989,400 +8009,1611 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     footer .copy {
+
+
+
+
+
+
 
         padding: 10px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .goTop p {
 
+
+
+
+
+
+
         font-size:
+
+
+
+
+
+
 
             12px;
 
+
+
+
+
+
+
         padding-top: 21px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .goTop {
 
+
+
+
+
+
+
         width: 38px;
 
+
+
+
+
+
+
         height: 38px;
+
+
+
+
+
+
 
         font-size: 14px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .goTop .topIcon {
 
+
+
+
+
+
+
         width: 11px;
+
+
+
+
+
+
 
         height: 11px;
 
+
+
+
+
+
+
         top: 11px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .thank {
 
+
+
+
+
+
+
         padding: 242px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .thank h5,
 
+
+
+
+
+
+
     .thank p {
+
+
+
+
+
+
 
         font-size: 16px;
 
+
+
+
+
+
+
         padding: 1% 5%;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .thank p {
 
+
+
+
+
+
+
         font-size: 14px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index h3 {
 
+
+
+
+
+
+
         font-size: 24px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .pc-banner,
 
+
+
+
+
+
+
     header .top-bar,
 
+
+
+
+
+
+
     .index .pc-partner,
+
+
+
     .index form .submit-btn {
+
+
+
+
+
+
 
         display: none;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .wap-banner,
 
+
+
+
+
+
+
     .index .product .list .box .row,
+
+
+
+
+
+
 
     .index .product .list .product-bg .box,
 
+
+
+
+
+
+
     .index .about .box,
 
+
+
+
+
+
+
     .index .partner .wap-partner,
+
+
+
     .index form .wap-submit-btn {
+
+
+
+
+
+
 
         display: block;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .about .box .imgs {
 
+
+
+
+
+
+
         margin-top: 55px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product {
 
+
+
+
+
+
+
         padding: 20px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product .list .box .img {
 
+
+
+
+
+
+
         padding: 5px 30px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product .list .txt .title {
 
+
+
+
+
+
+
         font-size: 16px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product .list .txt ul {
 
+
+
+
+
+
+
         padding: 10px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product .list .txt li {
 
+
+
+
+
+
+
         font-size: 14px;
+
+
+
+
+
+
 
         padding: 3px 0;
 
+
+
+
+
+
+
         padding-left: 20px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product .list .box {
 
+
+
+
+
+
+
         padding: 15px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product .list .product-bg .txt {
 
+
+
+
+
+
+
         padding: 0 15px 15px 50px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .product .list .product-bg .box {
 
+
+
+
+
+
+
         padding: 15px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .ability h3 {
 
+
+
+
+
+
+
         margin: 15px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .ability .content .left {
 
+
+
+
+
+
+
         padding: 9px 15px 15px 25px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .solution .list p {
 
+
+
+
+
+
+
         opacity: 1;
+
+
+
+
+
+
 
         font-size: 13px;
 
+
+
+
+
+
+
         border-radius: 0px 12px 0px 16px;
+
+
+
+
+
+
 
         background: rgba(0, 0, 0, 0.5);
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .solution {
 
+
+
+
+
+
+
         padding-top: 15px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .solution .list {
 
+
+
+
+
+
+
         padding: 20px 10px 15px 10px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .solution .list>div {
 
+
+
+
+
+
+
         padding: 5px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .choose .list {
 
+
+
+
+
+
+
         padding-top: 35px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .choose {
 
+
+
+
+
+
+
         padding: 15px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .choose .box .txt {
 
+
+
+
+
+
+
         font-size: 16px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .partner .wap-partner {
 
+
+
+
+
+
+
         padding: 30px 15px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .partner .wap-partner .swiper-container-horizontal>.swiper-pagination-bullets,
 
+
+
+
+
+
+
     .index .partner .wap-partner .swiper-pagination-custom,
+
+
+
+
+
+
 
     .index .partner .wap-partner .swiper-pagination-fraction {
 
+
+
+
+
+
+
         bottom: 0px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .contact form {
 
+
+
+
+
+
+
         text-align: center;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index form .wap-submit-btn {
 
+
+
+
+
+
+
         margin-right: 30%;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index form .right .website,
+
+
+
     .index form .right .emails {
+
+
+
+
+
+
 
         background-position: 50px center;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
 
 
     .index form .right ul {
 
+
+
+
+
+
+
         width: 62%;
+
+
+
+
+
+
 
         margin: 0 auto;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .contact {
 
+
+
+
+
+
+
         padding: 20px 0;
+
+
+
+
+
+
 
         margin: 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .contact .footer-logo img {
 
+
+
+
+
+
+
         width: 200px !important;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .navbar-brand>img {
 
+
+
+
+
+
+
         width: 100px !important;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     header .navbar-default .navbar-nav>li>a {
 
+
+
+
+
+
+
         text-align: center;
+
+
+
+
+
+
 
         padding: 6px 0;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .about .digital .circleChart {
 
+
+
+
+
+
+
         display: block;
+
+
+
+
+
+
 
     }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     .index .about .digital>div {
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
         padding: 10px 5px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .about .digital p {
 
-        font-size: 24px !important;
+
+
+
+
+
+
+        font-size: 22px !important;
+
+
+
+
+
+
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     .index .about .digital p>div {
 
+
+
+
+
+
+
         font-size: 13px;
 
+
+
+
+
+
+
     }
+
+
+
+
+
+
 
     .index .about .digital>div {
+
+
+
         float: left;
+
+
+
         width: 50%;
+
+
+
     }
 
+
+
+
+
+
+
     .index .product .pro-contact {
+
+
+
         margin-bottom: 10px;
+
+
+
     }
+
+    .youtube {
+        width: 100%;
+    }
+
+    .index .footer-submit .wap-submit-btn {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 50%;
+        background-color: #fc5425;
+        color: #fff;
+    }
+
+
 }
